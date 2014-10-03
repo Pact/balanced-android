@@ -5,6 +5,7 @@
 
 # java
 *.class
+bin
 
 # packages
 *.jar
@@ -16,6 +17,7 @@
 .buildpath
 .classpath
 .project
+proguard*
 
 # logging
 *.log
