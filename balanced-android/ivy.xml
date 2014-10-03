@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+    <info organisation="com.example" module="android_ant_ivy"/>
+ 
+    <configurations defaultconfmapping="runtime->default;unit-test->runtime;">
+        <conf name="runtime"/>
+        <conf name="unit-test" extends="runtime"/>
+        <conf name="provided" description="they are provided by the env." />
+        <conf name="compile" description="Compile dependencies"/>
+</configurations>
+ 
+    <dependencies>
+        <dependency org="com.google.code.gson" name="gson" rev="2.2.4" conf="compile,runtime"/>
+        <dependency org="org.apache.httpcomponents" name="httpclient" rev="4.2.1" conf="compile,runtime"/>
+    </dependencies>
+</ivy-module>
